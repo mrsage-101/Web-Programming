@@ -6,5 +6,5 @@ I took this elective intending to train myself to become proficient in coding. S
 - HTML
 - CSS
 
-Progress Track
-Day 1: Did parallel coding while watching video taking some pauses also to solve exercises. Video covered till timestamp 2:11:08. 
+### Progress Track
+ - Day 1: Did parallel coding while watching video taking some pauses also to solve exercises. Video covered till timestamp 2:11:08. 
