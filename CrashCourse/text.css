@@ -1,0 +1,39 @@
+.video-title{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    width:250px;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+.video-stats{
+    font-family: Arial;
+    font-size: 14px;
+    color: grey;
+    margin-top: 4px;
+}
+.name{
+    font-family: Arial;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.desc{
+    font-family: Arial;
+    width:260px;
+    font-size: 14px;
+    margin-top: 20px;
+    color:grey;
+    margin-bottom: 50;
+}
+.box-text{
+    font-family: Arial;
+    text-align: center;
+    background-color: rgb(241, 46, 46);
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.underline:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
