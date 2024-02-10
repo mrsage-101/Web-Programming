@@ -5,6 +5,3 @@ I took this elective intending to train myself to become proficient in coding. S
 ### Technologies Covered:
 - HTML
 - CSS
-
-### Progress Track
- - Day 1: Did parallel coding while watching video taking some pauses also to solve exercises. The video covered till timestamp 2:11:08. Whole hustle took me 4 hours.
