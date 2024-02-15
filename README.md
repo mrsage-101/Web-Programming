@@ -5,3 +5,5 @@ I took this elective intending to train myself to become proficient in coding. S
 ### Technologies Covered:
 - HTML
 - CSS
+- Bootstrap
+- Javascript
