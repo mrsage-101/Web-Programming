@@ -2,7 +2,19 @@ body{
     margin:0;
     padding: 0;
     height:100vh;
-    display:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('instagram-hex-colors-gradient-background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.center {
+    width: 300px;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 label{
