@@ -1,0 +1,17 @@
+body{
+    margin:0;
+    padding: 0;
+    height:100vh;
+    display:center;
+}
+
+label{
+    font-family: Arial;
+    font-weight: 10px;
+    margin-top: 90px;
+}
+
+.form-group{
+    margin-top: 15px;
+    text-align: center;
+}
