@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="Task3.css">
     </head>
     <body>
-        <div class="center">
-            <form method="post">
-                <div class="form-group">
-                    <label for="Num1">Number1</label>
-                    <input type="number" class="form-control" id="Num1">
+        <div class="class-center">
+            <div class="container">
+                <div class="center">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="Num1">Number1</label>
+                            <input type="number" class="form-control" id="Num1">
+                        </div>
+                        <div class="form-group">
+                            <label for="Num2">Number2</label>
+                            <input type="number" class="form-control" id="Num2">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary" onclick="addOperation()">Add</button>
+                            <button type="button" class="btn btn-primary" onclick="subOperation()">Sub</button>
+                            <button type="button" class="btn btn-primary" onclick="mulOperation()">Mul</button>
+                            <button type="button" class="btn btn-primary" onclick="divOperation()">Div</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="Result">Result</label>
+                            <input type="number" class="form-group" id="Result" readonly>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="Num2">Number2</label>
-                    <input type="number" class="form-control" id="Num2">
-                </div>
-            </form>
-        </div>
+            </div>
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            function GetNumbers()
+            {
+                var num1 = parseFloat(document.getElementById('Num1').value) || 0;
+                var num2 = parseFloat(document.getElementById('Num2').value) || 0;
+                return{ num1, num2};
+            }
+
+            function addOperation()
+            {
+                var {num1, num2} = GetNumbers();
+                document.getElementById('Result').value = num1 + num2;
+            }
+
+            function subOperation()
+            {
+                var {num1, num2} = GetNumbers();
+                document.getElementById('Result').value = num1 - num2;
+            }
+
+            function divOperation()
+            {
+                var {num1, num2} = GetNumbers();
+                document.getElementById('Result').value = num1 / num2;
+            }
+
+            function mulOperation()
+            {
+                var {num1, num2} = GetNumbers();
+                document.getElementById('Result').value = num1 * num2;
+            }
+        </script>
     </body>
 </html>

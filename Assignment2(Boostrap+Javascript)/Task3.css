@@ -1,29 +1,37 @@
-body{
-    margin:0;
-    padding: 0;
-    height:100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('instagram-hex-colors-gradient-background.png') no-repeat center center fixed;
-    background-size: cover;
+body {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    margin: 0;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee); 
 }
+
 
 .center {
     width: 300px;
-    padding: 40px;
+    padding: 20px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
 }
 
-label{
-    font-family: Arial;
-    font-weight: 10px;
-    margin-top: 90px;
+
+.form-group {
+    margin-bottom: 10px; 
 }
 
-.form-group{
-    margin-top: 15px;
-    text-align: center;
+#Result {
+    width: 100%; 
+    padding: 8px 12px; 
+    margin-top: 10px; 
+    box-sizing: border-box; 
+}
+
+.btn {
+    margin-right: 4px; 
+    margin-bottom: 10px; 
+    border:none;
+    
 }
