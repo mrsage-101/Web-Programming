@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Task5.css">
+    </head>
+    <body>
+        <div id="table-container"></div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script>
+            var number= parseInt(prompt("Enter a number to see the table: "), 10);
+
+            var tableHTML = '<h3>Multiplication Table for ' + number + ':</h3>';
+            tableHTML += '<table border="1"';
+
+            for(var i = 1; i <= 10; i++)
+            {
+                tableHTML += '<tr><td>' + number + ' x ' + i + '<td><td>' + (number * i) + '<td><tr>';
+            }
+
+            tableHTML += '<table>'
+
+            document.getElementById('table-container').innerHTML = tableHTML;
+        </script>
+    </body>
+</html>
