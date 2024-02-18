@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Finding HTML Element.css">
+    </head>
+    <body>
+        
+        <!--getelementbyid-->
+        <div id="myDiv">Acessing this id of myDiv with getElementById</div>
+
+        <!--getElementsByTagName-->
+        <ul>
+            <li>Abubakar</li>
+            <li>Ali</li>
+            <li>Khattak</li>
+        </ul>
+
+        <!--getElementByClass-->
+        <p class="highlight">This paragraph is from class named highlight</p>
+        <p class="highlight">This is another paragraph from class named highlight2</p>
+
+        <!--getElementByCSSselector-->
+        <p class="intro">Hello! CSS selector 1</p>
+        <p class="intro">Hi! CSS selector 2</p>
+
+
+        <!--By HTML object collections-->
+        <form id="frm1">
+            <label for="fname">First Name </label>
+            <input type="text" id="fname" name="fname" ><br><br>
+            <label for="lname">Last Name </label>
+            <input type="text" id="lname" name="lname" ><br><br>
+            <button type="button" onclick="displayFormValues()">Display Value</button>
+        </form>
+
+        <div id="demo"></div>
+    </body>
+    <script>
+        
+        // defined the variable
+        var element = document.getElementById("myDiv");
+        // changed the innerHTML content by accessing it with variablename.HTML
+        element.innerHTML = "Changing the line from here inside the script!";
+
+        // get from tag name
+        var Listitem = document.getElementsByTagName("li");
+        for(var i = 0; i<Listitem.length; i++)
+        {
+            console.log(Listitem[i].innerHTML);
+        }
+
+        // get from class name
+        var Hitem = document.getElementsByClassName("highlight");
+        for(var i = 0; i < Hitem.length; i++)
+        {
+            console.log(Hitem.innerHTML);
+        }
+
+        // get through queryselectorall
+        var introParas = document.querySelectorAll("p.intro");
+        Array.from(introParas).forEach(function(introPara){
+            console.log(introPara.innerHTML);
+        })
+
+        function displayFormValues()
+        {
+            const form = document.forms['frm1'];
+
+            let text = "";
+
+            for(let i = 0; i < form.length; i++)
+            {
+                text+=form.element[i].value + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</html>
