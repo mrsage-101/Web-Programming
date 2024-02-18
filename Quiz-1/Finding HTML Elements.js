@@ -2,7 +2,7 @@
  var element = document.getElementById("myDiv");
  // changed the innerHTML content by accessing it with variablename.HTML
  element.innerHTML = "Changing the line from here inside the script!";
-
+ 
  // get from tag name
  var Listitem = document.getElementsByTagName("li");
  for(var i = 0; i<Listitem.length; i++)
@@ -36,3 +36,7 @@
 
      document.getElementById("demo").innerHTML = text;
  }
+
+
+ document.getElementById("Picture").src = "pngwing.com (5).png";
+ document.write(Date());
