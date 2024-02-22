@@ -56,13 +56,15 @@ h1 {
     color: #2691d9;
 }
 
-.pass {
+.pass 
+{
     margin: -5px 0 20px 5px;
     color: #a6a6a6;
     cursor: pointer;
 }
 
-.pass:hover {
+.pass:hover 
+{
     text-decoration: underline;
 }
 

@@ -30,18 +30,24 @@
                 var passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/; 
 
 
-                if (username === "") {
+                if (username === "") 
+                {
                     alert("Username must be filled out");
                     return false;
-                } else if (!usernamePattern.test(username)) {
+                } 
+                else if (!usernamePattern.test(username)) 
+                {
+              
                     alert("Username must contain at least 5 alphanumeric characters or underscores");
                     return false;
                 }
 
-                if (password === "") {
+                if (password === "") 
+                {
                     alert("Password must be filled out");
                     return false;
-                } else if (!passwordPattern.test(password)) {
+                } else if (!passwordPattern.test(password)) 
+                {
                     alert("Password must contain at least one digit, one lowercase letter, one uppercase letter, one special character, and be at least 8 characters long");
                     return false;
                 }
