@@ -16,7 +16,40 @@
                     <label>Password</label>
                 </div>
 
-               
+                <div class="txt_feild">
+                    <input type="date" id="date1" required>
+                    <label></label>
+                </div>
+
+                <div class="txt_feild">
+                    <input type="email" required>
+                    <label></label>
+                </div>
+
+                <div class="txt_field" style="margin-bottom: 5px;">
+                    <select required>
+                        <option value="" disabled selected hidden>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label></label>
+                </div>
+                
+                <div class="txt_field" style="margin-bottom: 5px;">
+                    <input type="tel" required>
+                    <label>Phone Number</label>
+                </div>
+
+                <div class="txt_field" style="margin-bottom: 5px;">
+                    <input type="text" required>
+                    <label>Zip-Code</label>
+                </div>  
+
+                <div class="txt_field" style="margin-bottom: 5px;">
+                    <input type="text" required>
+                    <label>Country</label>
+                </div>
 
                 <div class="pass">Forgest Password?</div>
                 <input type="submit" value="Login">
@@ -54,6 +87,67 @@
                     alert("Password must contain at least one digit, one lowercase letter, one uppercase letter, one special character, and be at least 8 characters long");
                     return false;
                 }
+                
+                            // Validate Email
+                var email = document.getElementById("email").value.trim();
+                if (email === "") {
+                    alert("Email must be filled out");
+                    return false;
+                } else {
+                    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailPattern.test(email)) {
+                        alert("Please enter a valid email address");
+                        return false;
+                    }
+                }
+
+                // Validate Date
+                var date = document.getElementById("date1").value.trim();
+                if (date === "") {
+                    alert("Date of Birth must be filled out");
+                    return false;
+                } else {
+                    // Assuming format is yyyy-mm-dd (standard HTML5 date input format)
+                    var datePattern = /^\d{4}-\d{2}-\d{2}$/;
+                    if (!datePattern.test(date)) {
+                        alert("Please enter a valid date in the format yyyy-mm-dd");
+                        return false;
+                    }
+                }
+
+                // Validate Gender Selection
+                var gender = document.getElementById("gender").value;
+                if (gender === "") {
+                    alert("Please select your gender");
+                    return false;
+                }
+
+                // Validate Phone Number
+                var phone = document.getElementById("phone").value.trim();
+                if (phone === "") {
+                    alert("Phone number must be filled out");
+                    return false;
+                } else {
+                    var phonePattern = /^\d{10}$/; // Assuming a 10 digit phone number
+                    if (!phonePattern.test(phone)) {
+                        alert("Please enter a valid 10-digit phone number");
+                        return false;
+                    }
+                }
+
+                // Validate Zip-Code
+                var zipCode = document.getElementById("zipcode").value.trim();
+                if (zipCode === "") {
+                    alert("Zip-code must be filled out");
+                    return false;
+                } // Add further validation if you have a specific format for the zip-code
+
+                // Validate Country
+                var country = document.getElementById("country").value.trim();
+                if (country === "") {
+                    alert("Country must be filled out");
+                    return false;
+                } // Add further validation if needed for country
 
                 return true;
             }
