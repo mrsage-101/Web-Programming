@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Task2.css">
+    </head>
+    <body>
+        <div class="center">
+            <h1>Login</h1>
+            <form id="loginForm" method="post" onsubmit="return validateForm()">
+                <div class="txt_feild">
+                    <input type="text" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="txt_feild">
+                    <input type="text" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="pass">Forgest Password?</div>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+
+        <script>
+            function validateForm() {
+                var username = document.getElementById("username").value.trim();
+                var password = document.getElementById("password").value.trim();
+
+                
+                var usernamePattern = /^[a-zA-Z0-9_]{5,}$/; 
+                var passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/; 
+
+
+                if (username === "") {
+                    alert("Username must be filled out");
+                    return false;
+                } else if (!usernamePattern.test(username)) {
+                    alert("Username must contain at least 5 alphanumeric characters or underscores");
+                    return false;
+                }
+
+                if (password === "") {
+                    alert("Password must be filled out");
+                    return false;
+                } else if (!passwordPattern.test(password)) {
+                    alert("Password must contain at least one digit, one lowercase letter, one uppercase letter, one special character, and be at least 8 characters long");
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+    </body>
+</html>
