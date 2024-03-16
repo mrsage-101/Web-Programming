@@ -1,51 +1,41 @@
-body{
-    margin: 0;
-    font-family: Arial;
+.navbar {
+    background-color: transparent !important;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color:#fff;
-}
-
-.navbar .logo{
-    flex:1;
-}
-
-.navbar .Portions{
-    flex:1;
-    text-align: right;
-}
-
-.navbar .Portions ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar .Portions ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.navbar .Portions ul li:first-child {
-    margin-left: 0;
-}
-
-.navbar .Portions ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.navbar .Portions ul li a:hover {
-    color: #ccc;
-}
-
-.brand {
-    font-size: 24px;
+.nav-link{
+    margin-right: 35px;
+    font:Arial;
+    color:black;
     font-weight: bold;
+}
+
+.nav-link:hover{
+    color:red;
+}
+
+.navbar-brand{
+    font: Arial;
+    color:red;
+    font-weight: bold;
+}
+
+.navbar-brand .logotext{
+    color: black;
+}
+
+.navbar-brand:hover{
+    color:rgb(255, 225, 0);
+}
+
+.navbar-brand .logotext:hover{
+    color:red;
+}
+
+.banner-wrapper{
+    padding-top: 6.875rem;
+}
+
+.banner-wrapper .banner-content{
+    vertical-align: middle;
+    align-self: center;
 }
