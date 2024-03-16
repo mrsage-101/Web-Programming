@@ -2,6 +2,10 @@
 ## TASK-01 (Create Responsive Porfolio)
 <p>Used Html, CSS, and Bootstrap for making this portfolio.</p> 
 <p>The navbar on hover changes color, also the Abubakar Siddique is animated changing color consistently with hover.</p>
+<p>For Skills section. I used the grid</p>
+<p>For Projects section used Bootstrap d-flex.</p>
+<p>For Contact Me imported icon from font awesome icon library</p>
+<p>It is responsive portfolio single page website for all screen sizes.</p>
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 <img src="Task-1/image0.png"><br>
 <img src="Task-1/image1.png"><br>
