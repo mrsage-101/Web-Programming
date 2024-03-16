@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color:#fff;
+}
+
+.navbar .logo{
+    flex:1;
+}
+
+.navbar .Portions{
+    flex:1;
+    text-align: right;
+}
+
+.navbar .Portions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .Portions ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .Portions ul li:first-child {
+    margin-left: 0;
+}
+
+.navbar .Portions ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .Portions ul li a:hover {
+    color: #ccc;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
