@@ -2,7 +2,7 @@
 ## TASK-01 (Create Responsive Porfolio)
 <p>Used Html, CSS, and Bootstrap for making this portfolio.</p> 
 <p>The navbar on hover changes color, also the Abubakar Siddique is animated changing color consistently with hover.</p>
--------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 <img src="Task-1/image0.png"><br>
 <img src="Task-1/image1.png"><br>
 <img src="Task-1/image2.png"><br>
