@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #272424;
+    font-family: 'Segoe UI';
+}
+
+.header1{
+    text-align: center;
+    color:#000000;
+    padding: 1rem;
+    position:relative;    
+}
+
+.header1:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -4%;
+    transform: translateX(60%);
+    height: 4px;
+    width: 100px;
+    background-color:#2ecc71;
+    margin-bottom: 5px;
+}
+
+.h1r{
+    color:#ff0000;
+}
+
+#clock {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+#hours, #minutes, #seconds {
+    padding-top: 30px;
+}
+
+#minutes, #seconds {
+    border-left: 2px solid #1aa010;
+}
