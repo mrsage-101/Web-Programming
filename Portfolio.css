@@ -1,0 +1,173 @@
+.navbar {
+    background-color: transparent !important;
+}
+
+.nav-link{
+    margin-right: 35px;
+    font:Arial;
+    color:black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-link:hover{
+    color:red;
+}
+
+.navbar-brand{
+    font: Arial;
+    color:red;
+    font-weight: bold;
+}
+
+.navbar-brand .logotext{
+    color: black;
+}
+
+.banner-content .logotext{
+    font: Arial;
+    font-weight: bold;
+    color: red;
+}
+
+.banner-content h2{
+    font:Arial;
+    font-weight: bold;
+    color: red;
+}
+
+.banner-content h5{
+    font:Arial;
+}
+
+.banner-content h1{
+    font:Arial;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    color:rgb(255, 225, 0);
+}
+
+.navbar-brand .logotext:hover{
+    color:red;
+}
+
+.banner-wrapper{
+    padding-top: 6.875rem;
+}
+
+.banner-wrapper .banner-content{
+    vertical-align: middle;
+    align-self: center;
+}
+
+
+.inner{
+    padding-top: 20px;
+}
+
+.header1{
+    text-align: center;
+    color:#000000;
+    padding: 1rem;
+    position: relative;
+    margin-top: 50px;
+}
+
+.header1:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    transform: translateX(50%);
+    height: 4px;
+    width: 100px;
+    background-color:#2ecc71;
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 80px;
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.skill-title{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;   
+}
+
+
+
+
+.skill-icon{
+    width: 95px;
+}
+
+.img-fluid{
+    width: 400px;
+}
+
+.h3{
+    color: rgb(0, 0, 0);
+    font-weight: 40px;
+    font: Arial;
+    font-weight: bold;
+}
+
+.h5{
+    color:red;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #ff0404;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color:white;
+    transition:  0.5s;
+}
+
+.name {
+    animation: typing 3.5s steps(40, end), color-change 2s infinite alternate;
+  }
+  
+  /* Color-changing keyframes */
+  @keyframes color-change {
+    0% { color: #000; }
+    25% { color: #f00; } /* Change to red */
+    50% { color: rgb(255, 89, 0); } /* Change to green */
+    75% { color: rgb(255, 145, 0); } /* Change to blue */
+    100% { color: #000; } /* Change back to black */
+  }
