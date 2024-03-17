@@ -1,4 +1,4 @@
-# Web-Programming
+# Web-Programming - Assignment (Task1,2,3,4)
 ## TASK-01 (Create Responsive Porfolio)
 ### Deployed Link: https://mrsage-101.github.io/Web-Programming/
 
@@ -19,6 +19,13 @@
 <img src="Task-1/image7.png"><br>
 <img src="Task-1/image8.png"><br>
 <img src="Task-1/image9.png"><br>
+
+## Task-04 (Rock Paper Scissor Game)
+<img src="RockPaperScissor-Task4/image0.png"><br>
+<img src="RockPaperScissor-Task4/image1.png"><br>
+<img src="RockPaperScissor-Task4/image2.png"><br>
+<img src="RockPaperScissor-Task4/image3.png"><br>
+
 
 ### Technologies Covered:
 - HTML
