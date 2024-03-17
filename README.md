@@ -26,6 +26,8 @@
 <img src="RockPaperScissor-Task4/image2.png"><br>
 <img src="RockPaperScissor-Task4/image3.png"><br>
 
+## Task-03 (Clock App)
+<img src="DigitalClockApp-Task3/image.png"><br>
 
 ### Technologies Covered:
 - HTML
