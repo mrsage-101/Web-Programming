@@ -6,7 +6,7 @@
 <p>For Projects section used Bootstrap d-flex.</p>
 <p>For Contact Me imported icon from font awesome icon library</p>
 <p>It is responsive portfolio single page website for all screen sizes.</p>
--------------------------------------------------------------------------------------------------------------------------------
+
 <img src="Task-1/image0.png"><br>
 <img src="Task-1/image1.png"><br>
 <img src="Task-1/image2.png"><br>
